@@ -42,6 +42,9 @@ Public Class range
                 Return True
             End If
         End If
+
+        Return False
+
     End Function
 
     Private Sub range_load(sender As Object, e As EventArgs) Handles MyBase.Load

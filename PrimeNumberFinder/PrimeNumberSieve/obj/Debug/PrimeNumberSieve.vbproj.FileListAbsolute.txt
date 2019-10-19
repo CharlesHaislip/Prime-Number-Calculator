@@ -143,3 +143,17 @@ C:\Users\iamcm\Desktop\Version 1_4\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.v
 C:\Users\iamcm\Desktop\Version 1_4\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.exe
 C:\Users\iamcm\Desktop\Version 1_4\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.xml
 C:\Users\iamcm\Desktop\Version 1_4\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.pdb
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.exe
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.xml
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.pdb
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\bin\Debug\PrimeNumberSieve.exe.config
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\bin\Debug\PrimeNumberSieve.exe
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\bin\Debug\PrimeNumberSieve.pdb
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\bin\Debug\PrimeNumberSieve.xml
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.vbprojAssemblyReference.cache
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.PrimeN.resources
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.IDRange.resources
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.Resources.resources
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.range.resources
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.vbproj.GenerateResource.cache
+C:\Users\iamcm\Documents\GitHub\Prime-Number-Finder\PrimeNumberFinder\PrimeNumberSieve\obj\Debug\PrimeNumberSieve.vbproj.CoreCompileInputs.cache
