@@ -47,7 +47,7 @@ Public Class range
 
     End Function
 
-    Private Sub range_load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Range_load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Resets dialog box
         TabIndex = txtLow.TabIndex
         txtHigh.ResetText()
@@ -64,13 +64,13 @@ Public Class range
         End If
     End Sub
 
-    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+    Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         'don't calculate
         RangeHalt = True
         Close()
     End Sub
 
-    Private Sub frm_clsing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub Frm_clsing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         'Sets the 'do not calculate' flag
         If High = Nothing OrElse Low = Nothing Then
             RangeHalt = True
