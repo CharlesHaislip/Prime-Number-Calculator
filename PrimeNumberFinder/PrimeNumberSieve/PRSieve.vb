@@ -1,5 +1,5 @@
-﻿'Practice... Mode...
 Option Strict On : Option Explicit On
+
 Module GlobalVars
     'Used to start the array and initialize neccessary vals
     'Sets Default Refresh Setting
@@ -63,6 +63,8 @@ Public Class PrimeN
         BolToList = True
 
     End Sub
+    
+    'Error Message Handler
     Public Sub Prob(ByVal N%)
         'Displays error message. Designed to make it easier to call errors.
         Dim msg$
@@ -93,6 +95,7 @@ Public Class PrimeN
         MessageBox.Show(msg, "A problem as occurred", MessageBoxButtons.OK, MessageBoxIcon.Error)
         BolToList = True
     End Sub
+    
     Public Sub Reset()
         If Not Saved Then
             Dim drInput As DialogResult = MessageBox.Show("You have not saved your work. Are you sure you want to reset?",
@@ -126,6 +129,7 @@ Public Class PrimeN
         'Display reset is complete
         lstDisp.Items.Add("Program reset.")
     End Sub
+        
     Public Sub Save()
         Dim FileP$ = Application.StartupPath & "\prime.txt"
         Dim arrayStrPR$(intCA - 1)
@@ -145,8 +149,8 @@ Public Class PrimeN
         'Mark Save as complete:Mark ToList As true
         Saved = True : BolToList = True
     End Sub
+    
     Public Sub SubPrime(ByVal N%)
-        'Sort of like a function.
         'Say Calculations have begun
         radCalculating.Checked = True : radCalculating.Enabled = True
         radCalculating.Refresh()
@@ -220,9 +224,7 @@ NXT:        If B = True Then
         'Error Handler: Generic
 Err:    Prob(3)
     End Sub
-    Public Sub SubPrimeThreaded(ByVal N%, NThreads%)
 
-    End Sub
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles btn1P.Click
         'Finds only one prime number
         Dim N As Integer = 1
@@ -248,6 +250,7 @@ Err:    Prob(3)
             End If
         End If
     End Sub
+
     Private Overloads Sub TxtNPKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles txtNP.KeyDown
         On Error GoTo Err
         Dim T%
@@ -274,6 +277,7 @@ Err:    Prob(3)
         Return
 Err:    Prob(3)
     End Sub
+
     Private Overloads Sub TxtArrayKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles txtGetArray.KeyDown
         If e.KeyCode = Keys.Return Then
             On Error GoTo Err
@@ -297,6 +301,7 @@ Err:    Prob(3)
 Err:        Prob(3)
         End If
     End Sub
+
     Private Sub CreditsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditsToolStripMenuItem.Click
         'Just gives credit to me. No, really, that is all it does. Except that it does remove textbox data
         'and what not. All the data in the array is still there, just not vissible. Oh, and it lists the
@@ -309,16 +314,20 @@ Err:        Prob(3)
         BolToList = True
         'Add Version History
     End Sub
+
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         Reset()
     End Sub
+
     Private Sub ResetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetToolStripMenuItem.Click
         Reset()
     End Sub
+
     Private Sub SaveArrayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveArrayToolStripMenuItem.Click
         'Save Array
         Save()
     End Sub
+
     Public Sub LoadArrayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadArrayToolStripMenuItem.Click
         'Sets Display
         lstDisp.Items.Clear()
@@ -357,6 +366,7 @@ Err:        Prob(3)
         lstDisp.Items.Add("Load Complete")
         lstDisp.Items.Add("Loaded " & arrayPR.Length - 1 & " numbers.")
     End Sub
+
     Private Sub DeleteArrayFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteArrayFileToolStripMenuItem.Click
         Dim FileP$ = Application.StartupPath & "\prime.txt"
         If Not IO.File.Exists(FileP) Then
@@ -373,12 +383,14 @@ Err:        Prob(3)
             MessageBox.Show("Delete aborted.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
     Private Sub ClearTextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearTextToolStripMenuItem.Click
         'Clears all displayed text
         lstDisp.Items.Clear()
         txtNP.Text = ""
         txtGetArray.Text = ""
     End Sub
+
     Private Sub CreateBackupFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateBackupFileToolStripMenuItem.Click
         'Tests if file exists in application directory
         If IO.File.Exists("prime.txt") Then
@@ -391,6 +403,7 @@ Err:        Prob(3)
             Prob(5)
         End If
     End Sub
+
     Private Sub LoadBackupFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadBackupFileToolStripMenuItem.Click
         'Sets Display
         lstDisp.Items.Clear()
@@ -430,6 +443,7 @@ Err:        Prob(3)
         lstDisp.Items.Add("Load Complete")
         lstDisp.Items.Add("Loaded " & arrayPR.Length - 1 & " numbers.")
     End Sub
+
     Public Sub LoadRangeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadRangeToolStripMenuItem.Click
         'Open load range form
         Dim range As New range
@@ -461,6 +475,7 @@ Err:        Prob(3)
             High = Nothing : Low = Nothing
         End If
     End Sub
+
     Private Sub LoadIDRangeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadIDRangeToolStripMenuItem.Click
         Dim IDRange As New IDRange
         IDRange.ShowDialog()
@@ -478,6 +493,7 @@ Err:        Prob(3)
         'Reset High/Low
         High = Nothing : Low = Nothing
     End Sub
+
     Private Sub ToDoListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToDoListToolStripMenuItem.Click
         'Todo list
         lstDisp.Items.Add("Add a digital instruction 'booklet'.")
@@ -486,6 +502,7 @@ Err:        Prob(3)
         lstDisp.Items.Add("Add multithreading Support (Remember roots as a limiter
             of activation)")
     End Sub
+
     Private Sub VersionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VersionToolStripMenuItem.Click
         'List versions and completion dates
         lstDisp.Items.Clear()
