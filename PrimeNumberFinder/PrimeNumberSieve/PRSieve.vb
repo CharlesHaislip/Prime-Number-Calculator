@@ -27,31 +27,6 @@ Module GlobalVars
     Public ErrTitle$ = "A problem as occurred"
     Public NThreads% = 1
 End Module
-Module History
-    'This is a module just for commenting on the history of this program. Nothing more, nothing less.
-    'The initial form of this program was a number rounder for the Applle ][e, which I wrote High school
-    'in 2016, I think. it was my first attempt at a major program, and the first iteration took several
-    'minutes, as I used nothing but mathematics to round the numbers. The next improvement came when I used
-    'integer to string conversions, and using the string data to find the dicimal point, and then round from
-    'there. I have never had it take more than a second, even numbers in the hundres of thousands, where as 
-    'the origional took a long time (maybe a minute?) to round 100.5. Drastic improvement. Then, I made a 
-    'Prime number sieve using what I had learned. I am using the same technique as I am here: take a number,
-    'divide it by all brime numbers before it that are less than the current investigative val by three 
-    '(though I am using 5 in this case. Has yet to fail me), and then take the decimal value and create a
-    'second varialbe, but as an integer, and compare the two values to see if they are equal. If they are 
-    'equal, the number is not prime. If there is not a single one were the two are equal, then it is prime.
-    ' Once done, add two to the investigative value, since there can not be any even primes save for two,
-    ' which is predefined.
-    'There are probably better ways, but it was the way that I figured out on my own. Without help. I made
-    'This program expecting it to take a while to find 1,000 primes. I was wrong. It takes less than 1 second
-    'to find the first 1001. At the time of writing this, I am 18 years old, in February 2018, and was able
-    'to make a flawed program like this that actually works. Now, to finish this program and note all of it...
-    'Update: 3/12/18
-    'I have modified the 'two variable method' as I am calling it with the 'mod' method, which I believe to
-    'be faster and more efficent.
-    'Update 10/4/2018
-    'Made the lstBox more efficeint by only listing items when neccessary.
-End Module
 
 Public Class PrimeN
     Private Sub Form1_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
