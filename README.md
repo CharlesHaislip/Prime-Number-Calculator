@@ -1,2 +1,2 @@
 # Prime-Number-Calculator
-This is a prime number finer created in Visual Basic. 
+This is a prime number finder created in Visual Basic.
